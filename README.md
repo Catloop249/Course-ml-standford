@@ -1,3 +1,2 @@
-# ML-Tensorflow
-Using tensorflow for ML 
-1. Titanic - Logictis Regression
+# Course - ML by Andrew Ng Assignment
+
