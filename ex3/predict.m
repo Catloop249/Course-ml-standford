@@ -27,7 +27,7 @@ result_l2= sigmoid(X*Theta1');
 %after apply theta 1 ,need to add bias unit 1s	
 result_l2= [ones(rows(result_l2),1) ,result_l2];
 result_l3=sigmoid(result_l2*Theta2');
-%after apply theta2
+%after apply theta 2
 [result_l3,p]=max(result_l3,[],2);
 
 
