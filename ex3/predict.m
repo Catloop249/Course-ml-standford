@@ -19,11 +19,15 @@ p = zeros(size(X, 1), 1);
 %       function can also return the index of the max element, for more
 %       information see 'help max'. If your examples are in rows, then, you
 %       can use max(A, [], 2) to obtain the max for each row.
-%
+%===== NGOC==========================
+%add bias column 1's
 X = [ones(rows(X),1) ,X];
+%output layer 2
 result_l2= sigmoid(X*Theta1');
+%after apply theta 1 ,need to add bias unit 1s	
 result_l2= [ones(rows(result_l2),1) ,result_l2];
 result_l3=sigmoid(result_l2*Theta2');
+%after apply theta2
 [result_l3,p]=max(result_l3,[],2);
 
 
